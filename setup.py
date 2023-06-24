@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="proxifier-cli",
-    version="1.0.0",
+    version="1.0.1",
     author="Pradish Bijukchhe",
     author_email="pradishbijukchhe@gmail.com",
     description="CLI to set up proxy configuration of Proxifier",
@@ -16,4 +16,6 @@ setuptools.setup(
         "Operating System :: Microsoft :: Windows",
     ],
     python_requires=">=3",
+    include_package_data=True,
+    package_data={"": ["proxifier_cli/*.ppx"]},
 )

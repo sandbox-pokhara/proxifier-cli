@@ -4,9 +4,11 @@ import time
 from proxifier_cli.process import close_proxifier
 from proxifier_cli.process import start_proxifier
 
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
 
 def create_profile(address, port, username, password, protocol="HTTPS"):
-    with open(os.path.join("proxifier_cli", "profile.ppx")) as fp:
+    with open(os.path.join(BASE_DIR, "profile.ppx")) as fp:
         profile = fp.read()
         return profile.format(
             protocol=protocol,

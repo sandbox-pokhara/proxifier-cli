@@ -32,6 +32,11 @@
 	<RuleList>
 		<Rule enabled="true">
 			<Action type="Direct" />
+			<Applications>syncthing.exe</Applications>
+			<Name>syncthing.exe [auto-created]</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Direct" />
 			<Targets>localhost; 127.0.0.1; %ComputerName%; ::1</Targets>
 			<Name>Localhost</Name>
 		</Rule>

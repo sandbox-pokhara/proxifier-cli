@@ -21,5 +21,4 @@ setuptools.setup(
     ],
     python_requires=">=3",
     include_package_data=True,
-    package_data={"": ["proxifier_cli/*.ppx"]},
 )
